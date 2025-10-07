@@ -1,3 +1,23 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+sentence-transformers==2.2.2
+torch==2.2.0
+pandas==2.2.2
+numpy==1.26.2
+spacy==3.7.3
+langdetect==1.0.9
+googletrans==4.0.0-rc1
+python-multipart==0.0.6
+
+# Optional / recommended model packages (not installed via requirements by default):
+# To install spaCy language models used by the project, run:
+# python -m spacy download en_core_web_sm
+# python -m spacy download es_core_news_sm
+
+# Notes:
+# - If you use CUDA-enabled PyTorch, install the correct torch package for your CUDA version
+#   (see https://pytorch.org/get-started/locally/). The pinned torch above is CPU-only.
+# - sentence-transformers will download transformer models on first run; allow extra time.
 fastapi
 uvicorn[standard]
 sentence-transformers
