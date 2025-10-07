@@ -42,6 +42,24 @@ This repository contains a chatbot project designed to help users find and acces
    python main.py
    ```
 
+Running the API server (recommended for the web frontend)
+
+1. Start the backend API (this will import `main.py` and load models/data):
+
+```powershell
+python api.py
+```
+
+2. Start the frontend (in a separate terminal) — a Vite + TypeScript app is scaffolded in `chatbot-frontend`:
+
+```powershell
+cd chatbot-frontend
+npm install
+npm run dev
+```
+
+The frontend dev server uses a proxy so requests to `/api/*` are forwarded to the backend at `http://127.0.0.1:8000`.
+
 ## Usage
 - Interact with the chatbot to find nonprofit resources based on your needs.
 - Use the Jupyter notebook for data processing and embedding if you wish to update or expand the dataset.

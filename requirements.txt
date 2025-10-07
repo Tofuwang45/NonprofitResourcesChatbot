@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sentence-transformers
+torch
+pandas
+numpy
+spacy
+langdetect
+googletrans==4.0.0-rc1
+python-multipart
